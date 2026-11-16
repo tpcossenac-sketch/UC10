@@ -431,7 +431,7 @@ Cálculo: (Testes aprovados ÷ Total de testes executados) × 100
 
 ## 7. Evidências da execução dos testes
 
-![Evidência da execução dos testes](../academia_viva_missao_167/img/testes.png)
+![Evidência da execução dos testes](../missao_167_168_UC10/img/testes.png)
 
 ---
 
