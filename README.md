@@ -121,11 +121,11 @@ describe("Desafio 3 - A Verificação dos Dados do Herói", () => {
     });
 
     test("A idade está exatamente no limite mínimo permitido.", () => {
-        expect(validarJogador ("Rafael", 13, 300)).toBe(false)
+        expect(validarJogador("Rafael", 13, 300)).toBe(true)
     });
 
     test("A idade está exatamente no limite máximo permitido.", () => {
-        expect(validarJogador("Rafael", 80, 8000)).toBe(false)
+        expect(validarJogador("Rafael", 80, 8000)).toBe(true)
     });
 
 });
