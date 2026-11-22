@@ -97,35 +97,35 @@ describe("Desafio 3 - A Verificação dos Dados do Herói", () => {
     });
 
     test("O nome de usuário está vazio.", () => {
-        expect(() => validarJogador("", 20, 500)).toThrow(false)
+        expect(validarJogador("", 20, 500)).toBe(false)
     }); 
 
     test("O nome de usuário contém apenas espaços.", () => {
-        expect(() => validarJogador("   ", 20, 500)).toThrow(false)
+        expect(validarJogador("   ", 20, 500)).toBe(false)
     });
 
     test("A idade está abaixo do limite permitido.", () => {
-        expect(() => validarJogador("Rafael", 10, 100)).toThrow(false)
+        expect(validarJogador("Rafael", 10, 100)).toBe(false)
     });
 
     test("A idade está acima do limite permitido.", () => {
-        expect(() => validarJogador("Rafael", 85, 10000)).toThrow(false)
+        expect(validarJogador("Rafael", 85, 10000)).toBe(false)
     });
 
     test("A pontuação é negativa.", () => {
-        expect(() => validarJogador ("Rafael", 20, -1000)).toThrow(false)
+        expect(validarJogador ("Rafael", 20, -1000)).toBe(false)
     });
 
     test("A pontuação é igual a 0.", () => {
-        expect(() => validarJogador ("Rafael", 20, 0)).toThrow(false)
+        expect(validarJogador ("Rafael", 20, 0)).toBe(false)
     });
 
     test("A idade está exatamente no limite mínimo permitido.", () => {
-        expect(() => validarJogador ("Rafael", 13, 300)).toThrow(false)
+        expect(validarJogador ("Rafael", 13, 300)).toBe(false)
     });
 
     test("A idade está exatamente no limite máximo permitido.", () => {
-        expect(() =>  validarJogador("Rafael", 80, 8000)).toThrow(false)
+        expect(validarJogador("Rafael", 80, 8000)).toBe(false)
     });
 
 });
