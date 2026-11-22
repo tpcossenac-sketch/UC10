@@ -160,7 +160,7 @@ describe("Desafio 4 - O Transporte das Mercadorias", () => {
         expect(calcularEntrega(300, 5)).toBe(0)
     });
 
-    test("Deve aparecer mensagem de erro quando valor de compra for 0", () => {
+    test("Deve calcular entrega quando valor de compra for 0", () => {
         expect(calcularEntrega(0, 5)).toBe(10)
     });
 
